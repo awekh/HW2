@@ -1,0 +1,820 @@
+@font-face {
+  font-family: 'GeosansLight';
+  src: url('../fonts/GeosansLight.eot?#iefix') format('embedded-opentype'), 
+   url('../fonts/GeosansLight.woff') format('woff'),
+   url('../fonts/GeosansLight.ttf')  format('truetype'),
+   url('../fonts/GeosansLight.svg#GeosansLight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SegoeWPN';
+  src: url('../fonts/SegoeWPN.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SegoeWPN.woff') format('woff'), 
+    url('../fonts/SegoeWPN.ttf')  format('truetype'),
+     url('../fonts/SegoeWPN.svg#SegoeWPN') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SegoeWP-Light';
+  src: url('../fonts/SegoeWP-Light.eot?#iefix') format('embedded-opentype'),
+   url('../fonts/SegoeWP-Light.woff') format('woff'),
+    url('../fonts/SegoeWP-Light.ttf')  format('truetype'),
+     url('../fonts/SegoeWP-Light.svg#SegoeWP-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SourceSansPro-Light';
+  src: url('../fonts/SourceSansPro-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SourceSansPro-Light.otf')  format('opentype'),
+	     url('../fonts/SourceSansPro-Light.woff') format('woff'), 
+	     url('../fonts/SourceSansPro-Light.ttf')  format('truetype'), url('SourceSansPro-Light.svg#SourceSansPro-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+body {
+	margin: 0;
+	color: #000;
+	background: #fff;
+	font: 10px/12px arial, helvetica, sans-serif;
+	min-width: 320px;
+}
+/* General reset */
+form, fieldset {
+	margin: 0;
+	padding: 0;
+	border-style: none;
+}
+h1, h2, h3, h4 {
+	margin:0;
+}
+img {border-style: none;
+display:block;}
+input, select, textarea {
+	vertical-align: middle;
+	font: 100% arial, helvetica, sans-serif;
+}
+* {-webkit-box-sizing: border-box;
+	 -moz-box-sizing: border-box;
+ -ms-widthbox-sizing: border-box;
+	   -o-box-sizing: border-box;}
+a {
+	color: #f00;
+	text-decoration: none;
+}
+a:hover {text-decoration: underline;}
+/* General settings */
+
+
+.header {
+	max-width: 1070px;
+    padding: 17px 4% 3px 3.7%;
+    overflow: hidden;
+    margin: 0 auto;
+
+}
+a.logo {
+	background: url(../img/dotes.png) no-repeat;
+    background-size: 44px 44px;
+    font-size: 42.25px;
+    line-height: 44.25px;
+    padding-left: 59px;
+    color: #000;
+    float: left;
+    text-decoration: none;
+    font-family: 'SegoeWP-Light';
+    font-weight: normal;
+	
+}
+h1 {
+	float-left;
+	margin:0;
+}
+nav {
+	float:right;
+	padding-top: 21px;
+
+}
+nav a{
+	color: #6c6c6c;
+    font-size: 21px;
+    line-height: 21px;
+    margin-right: 31px;
+    float: left;
+    padding:3px 2px 18px 5px;
+	background: linear-gradient(to right, #5094f2, #5094f2) no-repeat;
+	background:-moz-linear-gradient(left, #5094f2, #5094f2) no-repeat;
+	background:-o-linear-gradient(left, #5094f2, #5094f2) no-repeat;
+	background:-ms-linear-gradient(left, #5094f2, #5094f2) no-repeat;
+	background:-webkit-linear-gradient(left, #5094f2, #5094f2) no-repeat;
+	background-position: 50% 100%;
+	background-size: 0 3px;
+	transition: background 0.7s ease-in;
+	font-family: 'SegoeWPN';
+
+	}
+nav a:hover{
+	background-size: 100% 3px;
+	text-decoration: none;
+}
+nav a:last-child{
+	margin-right: 0px;
+}
+.menu {display:none;}
+
+.gallery{
+	width: 100%;
+	background:url(../img/border-gal.png) repeat-x, url(../img/gallery-bg.png) no-repeat;
+	background-size:35px 7px, 100% 100%;
+	background-position: 0 100%, 100% 100%;
+	margin-bottom: 45px;
+}
+
+.gallery-holder{
+	max-width: 1070px;
+	position: relative;
+	margin:0 auto;
+	padding: 40px 0 30px 0;
+}
+.gallery-content {
+	float:right;
+	width: 21.02%;
+	text-align: left;
+}
+.list {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
+}
+.list li {
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  
+}
+.list li.first. {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.img-holder{
+	padding: 0px 0 0 7.88%;
+    float: left;
+    width: 40%;
+    display: block;
+}
+
+.list img {
+  
+    width: 100%;
+    display:block;
+
+}
+
+
+
+ .list_tabs {
+ 	margin: 0;
+ 	padding: 10px 0 0;
+ 	list-style: none;
+ 	left: 50%;
+ 	position: relative;
+ 	float: left;
+}
+ .list_tabs li{
+ 	float: left;
+ 	right: 50%;
+ 	position: relative;
+ 	padding: 0 5px;
+}
+.list_tabs li a{
+	float: left;
+	text-indent: -9999px;
+	background: url("../img/bg-rslides_tabs-a.png") no-repeat;
+  	width: 17px;
+  	height: 16px;
+  	display:block;
+}
+.list_tabs li.list_here a{ background: url("../img/bg-rslides_here-a.png") no-repeat;}
+
+
+.prev, .next{
+	width: 25px;
+	height: 63px;
+	display: block;
+	text-indent: -30000px;
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	margin-top: -16px;
+	z-index: 10;
+}
+.prev{background: url(../img/left.png) no-repeat;}
+.next{
+	background: url(../img/right.png) no-repeat;
+	right: 0%;
+	left: auto;
+}
+.box-gallery {
+    width: 49.86%;
+    float: right;
+    padding: 10% 38px 0 0;
+}
+
+h2 {
+    margin: 0;
+    padding: 0 0 15px 0;
+    font-family: 'SegoeWP-Light';
+    font-weight: normal;
+    font-size: 42.35px;
+    line-height: 44.35px;
+    color: #fff;
+}
+
+.box-gallery span {
+    margin: 0;
+    padding: 0 0 18px 0;
+    font-family: 'SegoeWP-Light';
+    display: block;
+    color: #fff;
+    font-size: 26.35px;
+    line-height: 28.35px;
+}
+
+.box-gallery .button {
+    display: block;
+    padding: 7px 11px 10px 45px;
+    margin: 16px 0 0 11px;
+    float: left;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 22.35px;
+    line-height: 24.35px;
+    font-family: 'SegoeWP-Light';
+    background: url(../img/bird.png) no-repeat 10px 10px, #5094f2;
+    background-size: 23px 23px;
+    transition: box-shadow 0.3s;
+    -webkit-transition: box-shadow 0.3s;
+    -moz-transition: box-shadow 0.3s;
+    -ms-transition: box-shadow 0.3s;
+    -o-transition: box-shadow 0.3s;
+}
+
+.box-gallery .button:hover {
+    text-decoration: none;
+    box-shadow: 0px 0px 26px 2px #5094f2; }
+
+
+.main {
+	max-width: 1070px;
+	margin:0 auto;
+	padding:19px 0 0 0;
+}
+.main-nav {
+	width: 100%;
+	overflow:hidden;
+	margin:0 auto;
+	padding-bottom: 40px;
+	
+}
+.pencil,.monitor,.bracket{
+	margin:0;
+	display:block;
+	width:33.33%;
+	height: auto;
+	float:left;
+	text-align: center;
+
+}
+.main-box {
+	width: 100%;
+	overflow: hidden;
+}
+.main-box img{
+	margin:0 auto;
+	display:block;
+	height:auto;
+	width: 52%;
+	transition:0.3s 0.3s;
+}
+
+
+.main-box img:hover {
+    -webkit-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+}
+
+.main-box h3 {
+	font-size: 20.35px;
+	line-height:22.35px;
+	color:#5094f2;
+	padding: 24px 4% 9px 0px;
+	font-family: 'SegoeWPN';
+}
+.main-box p{
+	margin: 0;
+    font-family: 'SegoeWPN';
+    font-size: 14.35px;
+    line-height: 16.35px;
+    padding: 0 13.64%;
+    color:#909090;
+}
+.main-box-text{
+    float: none;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.bracket {
+	float:right;
+}
+.shopping-cart{
+	overflow:hidden;
+	width:100%;
+	margin:0 auto;
+	padding: 40px 0 29px 0px;
+}
+.blue-bracket {
+	width:42.6%;
+	float:left;
+
+}
+.blue-bracket img{
+	margin: 0 auto;
+    padding: 2% 5% 9% 16%;
+    display: block;
+        max-width: 100%;
+}
+.blue-bracket h2{
+	font-size:42.35px ;
+	line-height:46.6px ;
+	font-family: 'SegoeWPN';
+	color:#6f7173;
+	text-align: center;
+	padding: 1% 0% 6% 9%;
+}
+.blue-bracket-desc {
+	width: 56.8%;
+	float:right;
+	overflow: hidden;
+	padding: 5.8% 0 0 5.5%;
+}
+.blue-bracket-desc h3{
+	font-size: 26.35px;
+	line-height: 28.35px;
+	font-family: 'SegoeWPN';
+	margin:0;
+	display:block;
+	color:#6f7173;
+}
+.blue-bracket-desc ul {
+	float:left;
+	margin:0;
+	padding: 5% 0 0 0;
+
+}
+.blue-bracket-desc li {
+	list-style: none;
+	font-family: 'SegoeWP-Light';
+	font-size: 15.35px;
+	line-height: 17.35px;
+	color: #909090;
+	padding-bottom: 4%;
+}
+.footer {
+	border-top: 1px solid #e5e5e5;
+	
+}
+.footer-wrap {
+	max-width:1070px;
+	margin:0 auto;
+	background-color: #fff;
+	
+}
+.footer-wrap span{
+	display:block;
+	text-align: center;
+	padding:2.8% 0 ;
+	font-size:15.35px;
+	line-height:17.35px;
+	font-family: 'SegoeWP-Light';
+	color:#909090;
+}
+.sidr{
+	display:none;
+}
+
+
+@media screen and (max-width: 640px) {
+
+.header {
+	padding: 19px 27px 17px 33px;
+}
+.header nav {
+	display:none;
+}
+a.logo {
+	background: url(../img/dotes.png) no-repeat;
+    background-size: 53px 53px;
+    font-size: 49.25px;
+    line-height: 53.25px;
+    padding-left: 59px;
+    color: #000;
+    float: left;
+    text-decoration: none;
+    font-family: 'SegoeWP-Light';
+    font-weight: normal;
+}
+.menu {
+	display:block;
+	float:right;
+		height:44px;
+		width: 58px;
+		background-color: #5094f2;
+		position: relative;
+		margin-top: 8px;
+	}
+	.menu:before{
+		content: "";
+		width: 36px;
+		height: 5px;
+		display:block;
+		position: absolute;
+		left:20%;
+		background:#fff;
+		top:44%;
+		box-shadow: 0 8px 0 0 #fff,0 -8px 0 0 #fff;
+	}
+.sidr{
+		position:fixed;
+		top:0;
+		right: 0;
+	}
+	.sidr-inner{
+		background-color: #fff;
+		padding:20px;
+	}
+	.sidr-inner a {
+		display:block;
+		color: #000;
+		padding-bottom: 5px;
+		font-size: 16px;
+		line-height: 18px;
+		font-family: 'SegoeWPN';
+		
+	} 
+	.sidr-inner a:hover{
+		text-decoration: none;
+
+	}
+	.sidr-open .menu:before {
+		box-shadow:none}
+
+.gallery {
+	margin-bottom:0;
+	background-size: 0 0,100% 100%;
+}
+.main {
+	width: 100%;
+	margin:0 auto;
+    padding: 37px 0 0 0;}	
+	.main-nav {
+		max-width: 640px;
+	}
+.pencil,.monitor,.bracket{
+	margin: 0 auto 33px;
+	display:block;
+	width:100%;
+	height: auto;
+	float:left;
+	text-align: left;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #cccccc;}
+.main-box-text {
+    float: right;
+    display: inline-block;
+        width: 71%;
+    text-align: left;
+    padding: 26px 0 0 0%;
+}
+
+.main-box {
+	max-width: 640px;
+	    padding: 0px 7%;
+			}
+
+.main-box img{
+	    width: 25%;
+	float:left;
+}
+.main-box p {
+	padding-left:0;
+	font-size: 19px;
+    padding-right: 15px;
+        line-height: 20px;
+
+}
+
+.main-box h3 {
+	padding-top: 0;
+}
+.box-gallery {
+    width: 57%;
+    padding: 0% 35px 31px 0;
+}
+
+
+.blue-bracket{
+	width: 100%;
+    text-align: center;
+    padding: 0 1%;
+}
+
+.blue-bracket img{
+	padding: 0;
+    max-width: 210px;
+    max-height: 160px;}
+.blue-bracket h2 {
+	padding-left: 0;
+}
+
+.gallery-holder{
+	padding: 22px 0 0px 0;
+}
+h2 {
+	font-size: 31px;
+	line-height: 36px;
+	    padding: 0 0 3px 0;
+}
+
+
+.img-holder {
+    padding: 0px 0 0 5.88%;
+    float: left;
+    width: 33%;
+    display: block;
+}
+.box-gallery span{
+	font-size: 22px;
+	line-height: 36px;
+	padding-bottom: 0;
+}
+.box-gallery .button{
+	font-size: 31px;
+	line-height: 31px;
+	padding: 7px 13px 15px 60px;
+	background-size: 32px 32px;
+	    margin: 30px 0 0 5px;
+}
+.main-box h3{
+	font-size: 34px;
+	margin-bottom: 15px;
+}
+.main-nav {
+	padding-bottom: 0;
+}
+.shopping-cart {
+    padding: 3px 0 29px 0px;}
+
+.blue-bracket-desc{
+	    width: 100%;
+    text-align: left;
+   padding: 20px 5% 0 12%;
+}
+.blue-bracket-desc h3{
+	font-size: 34px;
+	line-height: 34px;
+
+}
+.blue-bracket-desc li {
+	font-size: 17px;
+	line-height: 17px;padding-bottom: 3.7%;
+}
+.blue-bracket-desc ul {
+   
+    padding: 6% 0 0 0;
+}
+.footer-wrap span{
+	    padding: 4.8% 0;
+}
+
+}
+@media screen and (max-width: 480px) {
+
+.header {
+	padding: 10px 10px 10px 10px;
+}
+.header nav {
+	display:none;
+}
+a.logo {
+	background: url(../img/dotes.png) no-repeat;
+    background-size: 53px 53px;
+    font-size: 49.25px;
+    line-height: 53.25px;
+    padding-left: 59px;
+    color: #000;
+    float: left;
+    text-decoration: none;
+    font-family: 'SegoeWP-Light';
+    font-weight: normal;
+}
+.menu {
+	display:block;
+	float:right;
+		height:44px;
+		width: 58px;
+		background-color: #5094f2;
+		position: relative;
+		margin-top: 8px;
+	}
+	.menu:before{
+		content: "";
+		width: 36px;
+		height: 5px;
+		display:block;
+		position: absolute;
+		left:20%;
+		background:#fff;
+		top:44%;
+		box-shadow: 0 8px 0 0 #fff,0 -8px 0 0 #fff;
+	}
+.sidr{
+		position:fixed;
+		top:0;
+		right: 0;
+	}
+	.sidr-inner{
+		background-color: #fff;
+		padding:20px;
+	}
+	.sidr-inner a {
+		display:block;
+		color: #000;
+		padding-bottom: 5px;
+		font-size: 16px;
+		line-height: 18px;
+		font-family: 'SegoeWPN';
+		
+	} 
+	.sidr-inner a:hover{
+		text-decoration: none;
+
+	}
+	.sidr-open .menu:before {
+		box-shadow:none}
+
+.gallery {
+	margin-bottom:0;
+	background-size: 0 0,100% 100%;
+}
+.main {
+	width: 100%;
+	margin:0 auto;
+    padding: 37px 0 0 0;}	
+	.main-nav {
+		max-width: 640px;
+	}
+.pencil,.monitor,.bracket{
+	margin: 0 auto 33px;
+	display:block;
+	width:100%;
+	height: auto;
+	float:left;
+	text-align: left;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #cccccc;}
+.main-box-text {
+  float: right;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 26px 0 0 0%;
+}
+
+.main-box {
+	max-width: 640px;
+	    padding: 0px 7%;
+			}
+
+.main-box img{
+	    width: 40%;
+    float: none;
+    margin: 0 auto;
+}
+.main-box p {
+	padding-left:0;
+	font-size: 19px;
+    padding-right: 15px;
+        line-height: 20px;
+
+}
+
+.main-box h3 {
+	padding-top: 0;
+}
+.box-gallery {
+    width: 100%;
+    padding: 0% 10% 20px;
+    text-align: center;
+}
+
+
+.blue-bracket{
+	width: 100%;
+    text-align: center;
+    padding: 0 1%;
+}
+
+.blue-bracket img{
+	padding: 0;
+    max-width: 210px;
+    max-height: 160px;}
+.blue-bracket h2 {
+	padding-left: 0;
+}
+
+.gallery-holder{
+	padding: 22px 0 0px 0;
+}
+h2 {
+	font-size: 31px;
+	line-height: 36px;
+	    padding: 0 0 3px 0;
+}
+
+.list img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;}
+.img-holder {
+   padding: 0px;
+    float: none; 
+    width: 100%;
+    display: block;
+}
+.box-gallery span{
+	font-size: 22px;
+	line-height: 36px;
+	padding-bottom: 0;
+}
+.box-gallery .button {
+    font-size: 31px;
+    line-height: 31px;
+    padding: 7px 13px 15px 60px;
+    background-size: 32px 32px;
+    margin: 30px 0 0;
+    float: none;
+    display: inline-block;}
+.main-box h3{
+	font-size: 34px;
+	margin-bottom: 15px;
+	line-height: 34px;
+}
+.main-nav {
+	padding-bottom: 0;
+}
+.shopping-cart {
+    padding: 3px 0 29px 0px;}
+
+.blue-bracket-desc{
+	    width: 100%;
+    text-align: left;
+   padding: 20px 5% 0 12%;
+}
+.blue-bracket-desc h3{
+	font-size: 34px;
+	line-height: 34px;
+
+}
+.blue-bracket-desc li {
+	font-size: 17px;
+	line-height: 17px;padding-bottom: 3.7%;
+}
+.blue-bracket-desc ul {
+   
+    padding: 6% 0 0 0;
+}
+.footer-wrap span{
+	    padding: 4.8% 0;
+}
+
+
+
